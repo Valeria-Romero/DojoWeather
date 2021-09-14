@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Dojo weather
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <body>
+            <div class="navBar">
+                <h1>DojoWeather</h1>
+                <ul class="cities">
+                    <li class="currentCity">Burbank</li>
+                    <li class="currentCity">Chicago</li>
+                    <li class="currentCity">Dallas</li>
+                </ul>
+            </div>
+            <div class="topStatus">
+                <h2>San Jose</h2>
+                <div class="tempOpt">
+                    <label for="selector">Show temperature in</label>
+                    <select class="selector" name="selector" id="selectTemp">
+                        <option value="Celsius">°C</option>
+                        <option value="Fahrenheit">°F</option>
+                    </select>
+                </div>  
+            </div>
+            <div class="mainCointainer">
+                <div class="weatherStatus">
+                    <h3>Today</h3>
+                    <img class="weatherPic" src="./img/some_rain.png" alt="rain weather image">
+                    <span>Some rain</span>
+                    <div class="maxMinTemp">
+                        <p class="temp max">24</p>
+                        <p class="temp min">18</p>
+                    </div>
+                </div>
+                <div class="weatherStatus">
+                    <h3>Tomorrow</h3>
+                    <img class="weatherPic" src="./img/some_sun.png" alt="sun weather image">
+                    <span>Some sun</span>
+                    <div class="maxMinTemp">
+                        <p class="temp max">27</p>
+                        <p class="temp min">19</p>
+                    </div>
+                </div>
+                <div class="weatherStatus">
+                    <h3>Friday</h3>
+                    <img class="weatherPic" src="./img/some_clouds.png" alt="cloud weather image">
+                    <span>Some clouds</span>
+                    <div class="maxMinTemp">
+                        <p class="temp max">21</p>
+                        <p class="temp min">16</p>
+                    </div>
+                </div>
+                <div class="weatherStatus">
+                    <h3>Saturday</h3>
+                    <img class="weatherPic" src="./img/some_sun.png" alt="sun weather image">
+                    <span>Some sun</span>
+                    <div class="maxMinTemp">
+                        <p class="temp max">26</p>
+                        <p class="temp min">21</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cookiesPopUp">
+                <img class="cookieImg"  src="./img/cookie.png" alt="cookies message image">
+                <div class="infoCookies">
+                    <h4 class="cookieTitle">Stop! Cookie time</h4>
+                    <p class="cookieText">
+                        We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+                <button class="acceptBtn" onclick="removePopUp()">I accept</button>
+            </div>
+            <script src="./js/index.js"></script>
+        </body>
+    </head>
+</html>

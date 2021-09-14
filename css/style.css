@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20%;
+    background-color: rgb(74, 162, 197);
+    color: white;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.cities{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li{
+    font-size: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.topStatus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin: 0 20%;
+    padding: 25px 0;
+}
+
+.topStatus > h2{
+    font-size: 40px;
+}
+
+.tempOpt > label{
+    font-size: 20px;
+}
+
+#selectTemp{
+    margin-left: 8px;
+    height: 30px;
+    width: 40px;
+}
+
+option{
+    background-color: gainsboro;
+}
+
+.mainCointainer{
+    display: flex;
+    flex-direction: row;
+    margin: 0 20%;
+}
+
+.weatherStatus{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: gainsboro;
+    padding: 30px 20px;
+    margin: 30px 0px;
+    margin-right: 37px;
+}
+
+.weatherPic{
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px 10px;
+}
+
+h3, span{
+    text-align: center;
+    padding: 10px 0;
+}
+
+h3{
+    font-size: 30px;
+}
+
+span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.maxMinTemp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.temp{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.max::after, .min::after{
+    content: "°";
+}
+
+.max{
+    color: rgb(179, 0, 0);
+}
+
+.min{
+    color: rgb(30, 129, 241);
+}
+
+.cookiesPopUp{
+    margin: 0 20%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: gainsboro;
+    position: fixed;
+    bottom: 5px;
+}
+
+.infoCookies{
+    padding-right: 80px;
+    padding-left: 50px;
+}
+
+.cookieTitle{
+    font-size: 33px;
+    margin-bottom: 5px;
+}
+.cookieText{
+    font-size: 27px;
+}
+
+.acceptBtn{
+    width: 300px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(74, 162, 197);
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+    padding: 0 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
